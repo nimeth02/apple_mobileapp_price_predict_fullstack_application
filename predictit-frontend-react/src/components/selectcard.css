@@ -1,0 +1,71 @@
+
+  .custom-select {
+    outline: 2px solid rgb(212, 212, 215);
+    border-radius: 0.2rem; 
+  }
+
+  .custom-select:active {
+  
+  }
+
+  .custom-select option:checked {
+     /* Add a background color for the selected option */
+ /* Add padding for spacing */
+  }
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    background: rgb(252, 252, 252);
+    background-image: none;
+    border: 2px solid rgb(34 197 94);
+}
+
+.select {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2.5em;
+    line-height: 2;
+    background: #ffffff;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+select {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    color: #fff;
+    cursor: pointer;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.1em 0.6em;
+    background: rgb(34 197 94);
+    pointer-events: none;
+}
+
+.select:hover::after {
+    /* color: #F39C12; */
+}
+
+.select::after {
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
